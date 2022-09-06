@@ -14,7 +14,6 @@ function Calculator() {
       result.value = newVal.total;
     }
   };
-
   return (
     <div className="wrapper">
       <form>
