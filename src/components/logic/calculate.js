@@ -64,7 +64,6 @@ export default function calculate(obj, buttonName) {
     }
     return { ...obj, next: '0.' };
   }
-
   if (buttonName === '=') {
     if (obj.next && obj.operation) {
       return {
@@ -76,7 +75,6 @@ export default function calculate(obj, buttonName) {
     // '=' with no operation, nothing to do
     return {};
   }
-
   if (buttonName === '+/-') {
     if (obj.next) {
       return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
@@ -105,11 +103,9 @@ export default function calculate(obj, buttonName) {
     if (obj.total && !obj.next) {
       return { ...obj, operation: buttonName };
     }
-
     if (!obj.total) {
       return { total: 0, operation: buttonName };
     }
-
     return {
       total: operate(obj.total, obj.next, obj.operation),
       next: null,
