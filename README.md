@@ -9,7 +9,7 @@ Math Magicians App using React JS
 - React
 
 ## Live Demo
-Visit this [GitHub pages link](https://lucabenaventew.github.io/math-magicians) to see the live demo. 🟢🟢🟢
+Visit this [GitHub pages link](https://charming-torrone-394fbb.netlify.app/) to see the live demo. 🟢🟢🟢
 
 ## Getting Started
 
